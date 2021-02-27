@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Halle Gordon-Jeary">
+        <meta name="description" content="Guide to the Diamond Top Floor">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/diamond.css">
+        <title>The Diamond Top Floor Guide</title>
+    </head>
+    <body>
+        <header class="banner">
+            <h1>The Diamond 4th Floor Guide</h1>
+        </header>
+
+        <nav>
+            <div class="hamburger">
+                <button type="button" class="menuIcon" onclick="burgerMenu()">&#9776;</button>
+            </div>
+
+            <ul id="links" class="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./areas.html">Areas</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+                <li><a class="active" href="./contact.html">Contact</a></li>
+                <li><a href="./accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+
+        <script src="./scripts/hamburger.js"></script>
+
+        <main>
+            <h1>Contact</h1>
+
+            <h2>Submit a comment about the website</h2>
+            <form name="comments" action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl">
+                <input type="hidden" name="recipient" value="hkgordon-jeary1@sheffield.ac.uk">
+                <p>
+                    <label for="email">Your e-mail: </label>
+                    <input type="email" name="email" id="email" placeholder="type your email..." maxlength="40" size="35" required>
+                </p>
+                <p>
+                    <textarea name="comments" rows="5" cols="55" placeholder="type comments here..."></textarea>
+                </p>
+                <p>
+                    <input type="submit" name="submit" id="submit">
+                    <input type="reset">
+                </p>
+            </form>
+            
+            <p></p>
+            <h2>Official Diamond Contact Information</h2>
+            <div class="contacts">
+                <p><b>Address:</b></p>
+                <p>The Diamond</p>
+                <p>University of Sheffield</p>
+                <p>32 Leavygreave Road</p>
+                <p>S3 7RD</p>
+            </div>
+            <div class="contacts">
+                <p><b>Telephone:</b></p>
+                <p>(0114) 222-7200</p>
+            </div>
+            <div class="contacts">
+                <p><b>Email (engineering labs):</b></p>
+                <p>diamond-lab-support@sheffield.ac.uk</p>
+            </div>
+            
+        </main>
+        
+        <footer>
+            <p>&copy; Halle Gordon-Jeary, 2019</p>
+        </footer>
+
+    </body>
+</html>
